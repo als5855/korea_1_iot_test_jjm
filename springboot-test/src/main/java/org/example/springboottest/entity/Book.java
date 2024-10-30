@@ -24,9 +24,8 @@ public class Book {
     private String book_author;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable= false, length = 50)
+    @Column(nullable = false, length = 50)
     private Category book_category;
-
 
 
 }

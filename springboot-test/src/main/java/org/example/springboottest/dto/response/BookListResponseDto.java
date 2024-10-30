@@ -11,6 +11,14 @@ public class BookListResponseDto {
     private Long id;
     private String book_title;
     private String book_author;
-    private String category;
+    private Category book_category;
 
+
+    public BookListResponseDto(Long id, @NotBlank String bookTitle, String bookAuthor, Category bookCategory) {
+        this.id = id;
+        this.book_title = bookTitle;
+        this.book_author = bookAuthor;
+        this.book_category = bookCategory;
+
+    }
 }
